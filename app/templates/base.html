@@ -1,0 +1,102 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title -%}
+    {{ super() }}
+    {% if title -%}
+    {{ title }} - Portfolio{%- else %}Welcome to Thomas Ayalde's Portfolio
+    {% endif -%}
+{%- endblock title %}
+
+{% block styles -%}
+    {{super()}}
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='button.css') }}">
+
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+{%- endblock styles %}
+
+{% block body -%}
+
+    <div class="wrapper">
+
+        {% block navbar -%}
+            <nav id="sidebar">
+                <!-- Close Sidebar Button -->
+                <div id="dismiss">
+                    <i class="glyphicon glyphicon-remove"></i>
+                </div>
+
+                <!-- Sidebar Header -->
+                <div class="sidebar-header">
+                    <h3>Collapsible Sidebar</h3>
+                </div>
+
+                <!-- Sidebar Links -->
+                 <ul class="list-unstyled components">
+                    <p>Dummy Heading</p>
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li><a href="#">Home 1</a></li>
+                            <li><a href="#">Home 2</a></li>
+                            <li><a href="#">Home 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li><a href="#">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                            <li><a href="#">Page 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+        {%- endblock navbar %}
+
+        {% block content -%}
+        	<div id="content">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                                <i class="glyphicon glyphicon-align-justify"></i>
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="">Home</a></li>
+                                <li><a href="projects">Projects</a></li>
+                                <li><a href="blog">Blog</a></li>
+                                <li><a href="contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+        		{% block app_content -%}{%- endblock app_content %}
+        	</div>
+
+        {%- endblock content %}
+    </div>
+    <div class="overlay"></div>
+    {% block scripts -%}
+        {{super()}}
+        <!-- Custom Scroller Js CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+        <!-- Custom js for sidebar -->
+        <script type="text/javascript" src="{{ url_for('static', filename='button.js') }}"></script>
+    {%- endblock scripts %}
+{%- endblock body %}
