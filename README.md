@@ -3,6 +3,7 @@ Personal website
 
 ## Description
 Front-end: HTML, CSS, JavaScript, Bootstrap
+
 Back-end: Python (Flask)
 
 ### To-Do
