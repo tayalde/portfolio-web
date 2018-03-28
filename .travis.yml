@@ -8,10 +8,10 @@ python:
 services:
   - docker
 
-before_install:
+install:
   - docker build -t portfolio-web .
   - docker run -d -p 5000:5000 portfolio-web
-  - docker ps -a
+  
 
 script:
-  - pytest
+  - docker ps -a | grep "portfolio-web"
