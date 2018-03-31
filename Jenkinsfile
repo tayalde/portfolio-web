@@ -5,7 +5,7 @@ pipeline {
       steps {
         echo 'Building...'
         sh 'git pull'
-        sh 'sudo docker build -t portfolio-web .'
+        sh 'docker build -t portfolio-web .'
       }
     }
     stage('Test') {
