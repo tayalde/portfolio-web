@@ -4,7 +4,6 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Building...'
-        sh 'cd repos/portfolio-web'
         sh 'git pull'
         sh 'sudo docker build -t portfolio-web .'
       }
