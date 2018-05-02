@@ -9,6 +9,12 @@ body {
     background: #fafafa;
 }
 
+h1, h2, h3, h4 {
+    margin: auto;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
 p {
     font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
@@ -185,3 +191,121 @@ a.article, a.article:hover {
     top: 0;
     right: 0;
 }
+
+
+/* ---------------------------------------------------
+    CARDS STYLE
+--------------------------------------------------- */
+.title-card {
+    margin-bottom:5rem;
+    text-align: center;
+}
+
+.title-card .icons {
+    margin-bottom: 20px;
+}
+
+.title-card .avatar {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.title-card .avatar img {
+    width: auto;
+    height: auto;
+    max-width: 500px;
+    max-height: 150px;
+    border-radius: 50%;
+    border: 5px solid rgba(255,255,255,0.5); 
+}
+
+/* ---------------------------------------------------
+    ICONS STYLE
+--------------------------------------------------- */
+/* Style all font awesome icons */
+.fa {
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+.fa-facebook {
+    padding-left: 12.58px;
+    padding-right: 12.58px;
+    background: #3B5998;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-github {
+    background: #333;
+    color: white;
+}
+
+/* ---------------------------------------------------
+    SKILLS STYLE
+--------------------------------------------------- */
+.skills {
+    height:auto;
+    width:auto;
+    display:flex;
+    justify-content:center;
+    flex-direction:row;
+    flex-flow:row wrap;
+}
+
+.skills .skill {
+    margin-top: 15px;
+    display: inline-block
+}
+
+.skill .skill-name {
+    height: 2rem;
+    overflow: hidden;
+    font-size: 75%;
+    margin-top: 8px;
+    margin-bottom: 0;
+    letter-spacing: 4px;
+    text-transform: uppercase
+}
+
+.skill i {
+    margin-right:.25rem;
+    opacity:.75
+}
+
+
+@media screen and (min-width: 998px) {
+    .skills .skill { 
+        width:auto;
+        margin-left:2rem;
+        margin-right:2rem;
+        margin-bottom:32px
+    }
+}
+
+@media screen and (max-width: 997px) {
+    .skills .skill {
+        font-size:70%;
+        width:auto;
+        margin-left:2rem;
+        margin-right:2rem;
+        margin-bottom:20px
+    }
+}
+

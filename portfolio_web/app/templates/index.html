@@ -1,22 +1,99 @@
 {% extends "base.html" %}
 
 {% block app_content -%}
-	<h2>Collapsible Sidebar Using Bootstrap 3</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="title-card">
+                <h1>Thomas James Ayalde</h1>
+                <!-- <div class="avatar">
+                        <img src="{{ url_for('static', filename='images/avatar.jpg') }}" class="img-profile" alt="Avatar">
+                </div> -->
+                <div class="icons">
+                        <a href="https://www.facebook.com/thomas.ayalde" class="fa fa-facebook"></a>
+                        <a href="https://www.linkedin.com/in/thomasayalde/" class="fa fa-linkedin"></a>
+                        <a href="https://github.com/tayalde" class="fa fa-github"></a>
+                </div>
+        </div>
+        <div class="container">
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
 
         <div class="line"></div>
 
-        <h2>Lorem Ipsum Dolor</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+        <div class="container">
+                <h2>Skills</h2>
+                <div class="skills">
+                        <div class="skill">
+                                <i class="glyphicon glyphicon-star">
+                                </i>
+                                <i class="glyphicon glyphicon-star">
+                                </i>
+                                <i class="glyphicon glyphicon-star">
+                                </i>
+                                <i class="glyphicon glyphicon-star-empty">
+                                </i>
+                                <i class="glyphicon glyphicon-star-empty">
+                                </i>
+                                <div class="skill-name">Python</div>
+                        </div>
+                        <div class="skill">
+                                <i class="glyphicon glyphicon-star">
+                                </i>
+                                <i class="glyphicon glyphicon-star">
+                                </i>
+                                <i class="glyphicon glyphicon-star-empty">
+                                </i>
+                                <i class="glyphicon glyphicon-star-empty">
+                                </i>
+                                <i class="glyphicon glyphicon-star-empty">
+                                </i>
+                                <div class="skill-name">Bash</div>
+                        </div>
+                        <div class="skill">
+                                <i class="glyphicon glyphicon-star">
+                                </i>
+                                <i class="glyphicon glyphicon-star">
+                                </i>
+                                <i class="glyphicon glyphicon-star-empty">
+                                </i>
+                                <i class="glyphicon glyphicon-star-empty">
+                                </i>
+                                <i class="glyphicon glyphicon-star-empty">
+                                </i>
+                                <div class="skill-name">SQL</div>
+                        </div>
+                        <div class="skill">
+                                <i class="glyphicon glyphicon-star">
+                                </i>
+                                <i class="glyphicon glyphicon-star">
+                                </i>
+                                <i class="glyphicon glyphicon-star-empty">
+                                </i>
+                                <i class="glyphicon glyphicon-star-empty">
+                                </i>
+                                <i class="glyphicon glyphicon-star-empty">
+                                </i>
+                                <div class="skill-name">Git</div>
+                        </div>
+                        <div class="skill">
+                                <i class="glyphicon glyphicon-star">
+                                </i>
+                                <i class="glyphicon glyphicon-star">
+                                </i>
+                                <i class="glyphicon glyphicon-star-empty">
+                                </i>
+                                <i class="glyphicon glyphicon-star-empty">
+                                </i>
+                                <i class="glyphicon glyphicon-star-empty">
+                                </i>
+                                <div class="skill-name">Linux</div>
+                        </div>
+                </div>
+        </div>
         <div class="line"></div>
 
-        <h2>Lorem Ipsum Dolor</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-        <div class="line"></div>
-
-        <h3>Lorem Ipsum Dolor</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="container">
+                <h2>Projects</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
 {%- endblock %}
