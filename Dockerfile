@@ -1,4 +1,6 @@
-FROM amazon/aws-eb-python:3.4.2-onbuild-3.5.1    
+FROM amazon/aws-eb-python:3.4.2-onbuild-3.5.1  
+
+EXPOSE 8080  
 
 RUN apt-get update &&\
 	apt-get install -y software-properties-common vim &&\
@@ -26,7 +28,5 @@ ENV FLASK_APP=portfolio_web/portfolio.py
 
 ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
-
-EXPOSE 5000
 
 CMD python3.6 portfolio_web/portfolio.py
