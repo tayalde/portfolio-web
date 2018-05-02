@@ -1,4 +1,4 @@
-FROM ubuntu:16.04    
+FROM amazon/aws-eb-python:3.4.2-onbuild-3.5.1    
 
 RUN apt-get update &&\
 	apt-get install -y software-properties-common vim &&\
