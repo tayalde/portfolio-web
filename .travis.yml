@@ -1,0 +1,15 @@
+sudo: enabled
+  
+language: python
+python:
+  - "3.6"
+
+services:
+  - docker
+
+install:
+  - docker build -t portfolio-web .
+  - docker run -d -p 5000:5000 portfolio-web
+  
+script:
+  - docker ps -a | grep "portfolio-web"
