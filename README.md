@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/tayalde/portfolio-web.svg?branch=master)](https://travis-ci.org/tayalde/portfolio-web)
+
 # portfolio-web
 Personal website
 
